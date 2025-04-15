@@ -1,0 +1,23 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+xgboost>=2.0.0; platform_system != "Windows" and platform_machine != "arm64"
+xgboost-cpu>=2.0.0; platform_system == "Windows" or platform_machine == "arm64"
+scikit-learn>=1.3.0
+
+# Data processing
+tqdm>=4.65.0
+pyarrow>=14.0.1  # For parquet support
+
+# Development tools
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Type checking
+mypy>=1.7.0
+types-tqdm>=4.65.0
